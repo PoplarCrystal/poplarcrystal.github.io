@@ -1,12 +1,108 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal homepage of BaiJie">
   <title>BaiJie</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      color: #172033;
+      background: #f5f7fb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    main {
+      width: min(100%, 640px);
+      padding: 64px 48px;
+      text-align: center;
+      background: #fff;
+      border: 1px solid #e7ebf2;
+      border-radius: 20px;
+      box-shadow: 0 16px 48px rgb(23 32 51 / 8%);
+    }
+
+    .eyebrow {
+      margin: 0 0 14px;
+      color: #64748b;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(40px, 8vw, 56px);
+      letter-spacing: -0.04em;
+    }
+
+    .divider {
+      width: 48px;
+      height: 3px;
+      margin: 28px auto;
+      background: #5271ff;
+      border: 0;
+      border-radius: 99px;
+    }
+
+    .contact-label {
+      margin: 0 0 12px;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .email {
+      display: inline-block;
+      padding: 12px 18px;
+      color: #3154e8;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      background: #f0f3ff;
+      border-radius: 10px;
+      transition: background 160ms ease, transform 160ms ease;
+    }
+
+    .email:hover {
+      background: #e5eaff;
+      transform: translateY(-1px);
+    }
+
+    @media (max-width: 480px) {
+      main {
+        padding: 48px 24px;
+      }
+
+      .email {
+        font-size: 14px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>BaiJie</h1>
-  <p>Email: <a href="mailto:baijie2022@gmail.com">baijie2022@gmail.com</a></p>
+  <main>
+    <p class="eyebrow">Personal Homepage</p>
+    <h1>BaiJie</h1>
+    <hr class="divider">
+    <p class="contact-label">Contact</p>
+    <a class="email" href="mailto:baijie2022@gmail.com">
+      baijie2022@gmail.com
+    </a>
+  </main>
 </body>
 </html>
